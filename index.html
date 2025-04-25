@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <img src="/logo.png" id="header-img" alt="Logo">
+    <nav id="nav">
+      <ul class="nav-links">
+        <!-- <li><a href="#about">About</a></li> -->
+        <li><a href="#features">Features</a></li>
+        <li><a href="#showcase">Menu</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+
+    <section id="features" class="section">
+      <h1 class="headline">A world of flavors at your fingertips</h1>
+      <h2 class="section-title">Features</h2>
+      <div class="features-container">
+        <div class="feature-card">
+          <img src="https://i.ibb.co/d0z3jFb6/logo-1.png" class="feature-img">
+          <div class="feature-text">
+            <h3>Search and Filter Options</h3>
+            <p>Search recipes by ingredients, cuisine, dietary needs, cook time, and difficulty.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="https://i.ibb.co/ycD14hrV/logo-2.png" class="feature-img">
+          <div class="feature-text">
+            <h3>User Reviews and Ratings</h3>
+            <p>Leave reviews and ratings to guide other food lovers and improve content quality.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="https://i.ibb.co/hRy1fWNt/logo-3.png" class="feature-img">
+          <div class="feature-text">
+            <h3>Personalized Recommendations</h3>
+            <p>Get suggestions based on your past searches and saved recipes to enhance experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="showcase" class="showcase">
+      <div class="slide active" style="--bg: #D7C0AE;">
+        
+        <div class="text">
+          <h1>FastFood</h1>
+          <p>Fast food doesn’t mean compromising on taste. Big flavors await you!</p>
+          <button>Make It!</button>
+        </div>
+        <div class="image-container">
+          <img src="/1.png" id="main-image" class="main-image">
+          <img src="/2.png" class="preview">
+          <img src="/3.png" class="preview">
+        </div>
+      </div>
+
+      <div class="slide" style="--bg: #ACD3A8;">
+        <div class="text">
+          <h1>Dessert</h1>
+          <p>Delicious desserts that make every meal feel complete.</p>
+          <button>Make It!</button>
+        </div>
+        <div class="image-container">
+          <img src="/2.png" class="main-image">
+          <img src="/3.png" class="preview">
+          <img src="/1.png" class="preview">
+        </div>
+      </div>
+
+      <div class="slide" style="--bg: #C88EA7;">
+        <div class="text">
+          <h1>Drinks</h1>
+          <p>Refreshing, colorful drinks for every occasion.</p>
+          <button>Make It!</button>
+        </div>
+        <div class="image-container">
+          <img src="/3.png" class="main-image">
+          <img src="/1.png" class="preview">
+          <img src="/2.png" class="preview">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
