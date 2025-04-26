@@ -86,28 +86,18 @@ document.querySelectorAll('#preview-previous').forEach(el => {
 });
 
 
-// // Pause slideshow on hover
-// const showcase = document.querySelector('.showcase');
-
-// showcase.addEventListener('mouseenter', () => {
-//   clearInterval(interval);
-// });
-
-// showcase.addEventListener('mouseleave', () => {
-//   interval = setInterval(nextSlide, 4000);
-// });
 
 // Pause slideshow on button hover
-const buttons = document.querySelectorAll('.slide .text button');
+// const buttons = document.querySelectorAll('.slide .text button');
 
-buttons.forEach(button => {
-  button.addEventListener('mouseenter', () => {
-    clearInterval(interval);
-  });
+// buttons.forEach(button => {
+//   button.addEventListener('mouseenter', () => {
+//     clearInterval(interval);
+//   });
 
-  button.addEventListener('mouseleave', () => {
-    interval = setInterval(nextSlide, 4000);
-  });
-});
+//   button.addEventListener('mouseleave', () => {
+//     interval = setInterval(nextSlide, 4000);
+//   });
+// });
 
 
