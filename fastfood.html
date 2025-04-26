@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastFood Recipe Finder</title>
+  <link rel="stylesheet" href="fastfood.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <img src="logo.png" id="header-img" alt="FastFood Logo">
+    <nav id="nav">
+      <ul class="nav-links">
+        <li><a href="#search">Features</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features" class="section">
+      <h1 class="headline">FastFood Recipe Finder</h1>
+      <h2 class="section-title">Find Your Mouth Watering Recipe here </h2>
+      <select id="searchSelect" class="searchBox">
+        <option value="" disabled selected>Select a fast food</option>
+        <option value="burger">Burger</option>
+        <option value="pizza">Pizza</option>
+        <option value="noodle">Noodles</option>
+        <option value="sandwich">Sandwich</option>
+        <option value="chicken">Non-veg</option>
+      </select>
+      <button type="submit" class="searcBtn">Search</button>
+      <!-- <button type="submit" class="searcBtn" onclick="searchRecipes()">Search</button> -->
+      
+      
+    </section>
+
+    <section id="recipes"  class="section">
+      <h2 class="section-title">Featured Receipe </h2>
+      
+     
+    </section>
+  </main>
+
+  <script src="fastfood.js"></script>
+</body>
+</html>
