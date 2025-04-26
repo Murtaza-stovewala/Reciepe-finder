@@ -66,4 +66,48 @@ document.addEventListener('keydown', (e) => {
     restartInterval();
   }
 });
-// puse
+// Handle touch/click on preview images
+document.querySelectorAll('#preview-next').forEach(el => {
+  el.addEventListener('click', () => {
+    clearInterval(interval);
+    nextSlide();
+    restartInterval();
+  });
+});
+
+document.querySelectorAll('#preview-previous').forEach(el => {
+  el.addEventListener('click', () => {
+    clearInterval(interval);
+    slides[current].classList.remove('active');
+    current = (current - 1 + slides.length) % slides.length;
+    updateSlide();
+    restartInterval();
+  });
+});
+
+
+// // Pause slideshow on hover
+// const showcase = document.querySelector('.showcase');
+
+// showcase.addEventListener('mouseenter', () => {
+//   clearInterval(interval);
+// });
+
+// showcase.addEventListener('mouseleave', () => {
+//   interval = setInterval(nextSlide, 4000);
+// });
+
+// Pause slideshow on button hover
+const buttons = document.querySelectorAll('.slide .text button');
+
+buttons.forEach(button => {
+  button.addEventListener('mouseenter', () => {
+    clearInterval(interval);
+  });
+
+  button.addEventListener('mouseleave', () => {
+    interval = setInterval(nextSlide, 4000);
+  });
+});
+
+
