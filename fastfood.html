@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FastFood Recipe Finder</title>
   <link rel="stylesheet" href="fastfood.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 </head>
 <body>
   <header id="header">
@@ -21,26 +20,33 @@
   <main>
     <section id="search" class="section">
       <h1 class="headline">FastFood Recipe Finder</h1>
-      <h2 class="section-title">Find Your Mouth Watering Recipe here </h2>
+      <h2 class="section-title">Find Your Mouth Watering Recipe here</h2>
       <select id="searchSelect" class="searchBox">
         <option value="" disabled selected>Select a fast food</option>
         <option value="burger">Burger</option>
         <option value="pizza">Pizza</option>
         <option value="noodle">Noodles</option>
         <option value="sandwich">Sandwich</option>
+        <option value="pasta">Pasta</option>
+        <option value="bread">Bread</option>
         <option value="chicken">Non-veg</option>
       </select>
       <button type="submit" class="searcBtn">Search</button>
-      <!-- <button type="submit" class="searcBtn" onclick="searchRecipes()">Search</button> -->
-      
-      
     </section>
 
-    <section id="recipes"  class="section">
-      <h2 class="section-title">Featured Receipe </h2>
-      
-     
+    <section id="recipes" class="section">
+      <h2 class="section-title" id="section-title">Featured Recipe</h2>
+      <div id="recipe-section"></div>
     </section>
+
+    <!-- Fixed Popup -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <button id="popup-close">x</button>
+        <p id="popup-text"></p>
+      </div>
+    </div>
+
   </main>
 
   <script src="fastfood.js"></script>
