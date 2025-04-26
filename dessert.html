@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dessert Recipe Finder</title>
+  <link rel="stylesheet" href="dessert.css">
+</head>
+<body>
+  <header id="header">
+    <img src="logo.png" id="header-img" alt="FastFood Logo">
+    <nav id="nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="search" class="section">
+      <h1 class="headline">Dessert Recipe Finder</h1>
+      <h2 class="section-title">Find Your Mouth Watering Recipe here</h2>
+      <select id="searchSelect" class="searchBox">
+        <option value="" disabled selected>Select a Dessert</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="cake">Cake</option>
+        <option value="Cheesecake ">Cheesecake</option>
+        <option value="pudding">Pudding</option>
+        <option value="brownie">Brownie</option>
+        <option value="crumble">Crumble</option>
+        <option value="bread">Bread</option>
+      </select>
+      <button type="submit" class="searcBtn">Search</button>
+    </section>
+
+    <section id="recipes" class="section">
+      <h2 class="section-title" id="section-title">Featured Recipe</h2>
+      <div id="recipe-section"></div>
+    </section>
+
+    <!-- Fixed Popup -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <button id="popup-close">x</button>
+        <p id="popup-text"></p>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="Dessert.js"></script>
+</body>
+</html>
